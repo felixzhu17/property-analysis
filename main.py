@@ -16,7 +16,7 @@ st.title("Sydney Property Data Dashboard")
 @st.cache_data
 def load_and_process_data():
     # Read the Excel file
-    df = pd.read_csv("Sydney property masterdata.csv")
+    df = pd.read_csv("Sydney-property-masterdata.csv")
     
     # Convert numeric columns and handle missing values
     numeric_columns = ['Price', 'Rent', 'Yield', 'DoM', 'PΔ1Y', 'Vacancy Rate', 
